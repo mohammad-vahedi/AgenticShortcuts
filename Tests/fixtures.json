@@ -1,0 +1,191 @@
+[
+  {
+    "id": "fetch_extract_between",
+    "prompt": "Fetch the content from 'https://www.swerk-wue.de/bamberg/essen-trinken/mensen-speiseplaene/mensa-feldkirchenstrasse-bamberg/menu' and extract the text between 'Gerichte' and 'Beilagen'",
+    "must_contain": [
+      "getWebpageContents",
+      "matchText",
+      "Gerichte",
+      "Beilagen",
+      "getMatchGroup"
+    ],
+    "must_not_contain": [
+      "let ",
+      "var ",
+      "openURL",
+      "prompt(",
+      "===",
+      "function"
+    ],
+    "notes": "Core fetch+extract pattern. URL and markers must appear as literals."
+  },
+
+  {
+    "id": "battery_alert",
+    "prompt": "Check the battery level and show an alert",
+    "must_contain": [
+      "getBatteryLevel",
+      "alert"
+    ],
+    "must_not_contain": [
+      "let ",
+      "var ",
+      "==="
+    ],
+    "notes": "Basic device action — verifies @variable assignment and alert."
+  },
+
+  {
+    "id": "fetch_show",
+    "prompt": "Fetch the contents of 'https://example.com' and show them",
+    "must_contain": [
+      "getWebpageContents",
+      "example.com",
+      "show"
+    ],
+    "must_not_contain": [
+      "let ",
+      "openURL",
+      "prompt("
+    ],
+    "notes": "Simple fetch. URL must be a literal, not prompted."
+  },
+
+  {
+    "id": "clipboard_show",
+    "prompt": "Read what is on the clipboard and show it",
+    "must_contain": [
+      "getClipboard",
+      "show"
+    ],
+    "must_not_contain": [
+      "let ",
+      "prompt(",
+      "==="
+    ],
+    "notes": "Clipboard read — no user input needed."
+  },
+
+  {
+    "id": "weather_alert",
+    "prompt": "Get the current weather and show temperature and condition",
+    "must_contain": [
+      "getCurrentWeather",
+      "getWeatherDetail",
+      "Temperature",
+      "Condition"
+    ],
+    "must_not_contain": [
+      "let ",
+      "var ",
+      "==="
+    ],
+    "notes": "Weather pattern — two getWeatherDetail calls expected."
+  },
+
+  {
+    "id": "send_message",
+    "prompt": "Send a message to Mom saying 'On my way'",
+    "must_contain": [
+      "sendMessage",
+      "Mom",
+      "On my way"
+    ],
+    "must_not_contain": [
+      "let ",
+      "prompt(",
+      "==="
+    ],
+    "notes": "Message with literal recipient and text from the prompt."
+  },
+
+  {
+    "id": "open_app",
+    "prompt": "Open the Podcasts app",
+    "must_contain": [
+      "openApp",
+      "com.apple.podcasts"
+    ],
+    "must_not_contain": [
+      "let ",
+      "openURL",
+      "==="
+    ],
+    "notes": "App bundle ID must be correct for Podcasts."
+  },
+
+  {
+    "id": "dark_mode",
+    "prompt": "Turn on dark mode",
+    "must_contain": [
+      "darkMode"
+    ],
+    "must_not_contain": [
+      "let ",
+      "==="
+    ],
+    "notes": "Single-action shortcut."
+  },
+
+  {
+    "id": "random_list",
+    "prompt": "Pick a random city from New York, Tokyo, London, Sydney and show it",
+    "must_contain": [
+      "getRandomItem",
+      "New York",
+      "Tokyo",
+      "London",
+      "Sydney"
+    ],
+    "must_not_contain": [
+      "let ",
+      "Math.random",
+      "==="
+    ],
+    "notes": "List literal + getRandomItem. Must not use JS Math.random."
+  },
+
+  {
+    "id": "shell_script",
+    "prompt": "Run the shell command 'echo Hello' and show the output",
+    "must_contain": [
+      "runShellScript",
+      "echo Hello"
+    ],
+    "must_not_contain": [
+      "let ",
+      "var ",
+      "==="
+    ],
+    "notes": "macOS shell — result assigned to @variable before show."
+  },
+
+  {
+    "id": "no_prompt_for_literal_url",
+    "prompt": "Fetch 'https://news.ycombinator.com' and show the content",
+    "must_contain": [
+      "getWebpageContents",
+      "news.ycombinator.com"
+    ],
+    "must_not_contain": [
+      "prompt(",
+      "let ",
+      "openURL"
+    ],
+    "notes": "Regression: model must NOT ask the user for the URL via prompt()."
+  },
+
+  {
+    "id": "variable_sigil",
+    "prompt": "Fetch 'https://example.com/data' and show the result",
+    "must_contain": [
+      "@"
+    ],
+    "must_not_contain": [
+      "let ",
+      "var ",
+      "url ="
+    ],
+    "notes": "Regression: every variable must have the @ sigil. 'url = ...' is wrong."
+  }
+]

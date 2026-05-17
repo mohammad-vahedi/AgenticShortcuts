@@ -1,0 +1,464 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B549A33E20EDD3D5B24F3C7 /* PreviewInspector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C5B05808F569EDDCA9C9AB /* PreviewInspector.swift */; };
+		2140637A0769EC97B0F571DA /* CherriExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8343D9250591F73D0CAB00 /* CherriExamples.swift */; };
+		4CC7080C172805F505E9A6B2 /* PreviewSidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517A1A29E066E2FE1F6B6F53 /* PreviewSidebar.swift */; };
+		4D4EB0407614652FD2C295A6 /* CodePreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA6B93FEDB54A277518C58E /* CodePreviewView.swift */; };
+		535750D9DAE7AA34D1681F8E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5AD8ED279C860D76E74DA8 /* MainView.swift */; };
+		56923AD0177F4B736D4FA19B /* AgenticShortcutsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8189F2B907EC87BD08257A33 /* AgenticShortcutsApp.swift */; };
+		644DD1054A27FD134F3720C6 /* CherriLLMGuide.txt in Resources */ = {isa = PBXBuildFile; fileRef = 121C13C09B19F2339D96BAC4 /* CherriLLMGuide.txt */; };
+		6D6C4F481AEB42F0B96CE3AA /* CreateShortcutIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD07AB7404165783D04167C5 /* CreateShortcutIntent.swift */; };
+		7261E82354929DA647BD9C78 /* GenerationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8B71353848123CD5E747E7 /* GenerationResult.swift */; };
+		728A54374FEF7DD304DAC95B /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE6E883D671F9CEEF3E73B0 /* HistoryView.swift */; };
+		75426964360E8F2BDAAD0819 /* SchedulesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE6459737AF8F729ED6C572 /* SchedulesView.swift */; };
+		811258341715242BE9D3692F /* PreviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D2C67DA69745867F3F28BE /* PreviewViewModel.swift */; };
+		83E1DC23CA240813ECF021FB /* OllamaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC18CF4F84D0C635262A641 /* OllamaService.swift */; };
+		89728C19682BA613FFAD8C1E /* ActionCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8785600C271D746ECEC6A117 /* ActionCatalog.swift */; };
+		8BA452CE58C1960E559CE93B /* ShortcutGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8383EB28F75A8BC57B1F4F4C /* ShortcutGenerator.swift */; };
+		90AAAFB61F0F6C3AA2B94C65 /* PreviewComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9756D18FBD2A892DC82D6F /* PreviewComponents.swift */; };
+		9A683F1FCD4CA2E577C78901 /* PreviewLogsPane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424BEB49732AFBA358DF3C7D /* PreviewLogsPane.swift */; };
+		9E2C7DC60E40217EC3BBBF4C /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0504BBFE5930F8B62FA563C /* Schedule.swift */; };
+		A84540E9C80D1F4573796C99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA57EACECC7FE95BB397CCAA /* Assets.xcassets */; };
+		B004528CEF283ADEC86F39D1 /* AppShortcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524089F7C2B3ED6A4C7BB1FC /* AppShortcuts.swift */; };
+		C0CC3114D5690F4A29F30E5C /* ShortcutProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7FAE129827B260A587C7B3 /* ShortcutProject.swift */; };
+		C368EA1467B043C5F0956C3F /* ScheduleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52B60586E093C8AD00DEA22 /* ScheduleService.swift */; };
+		C8EACC865923CAB26AB13468 /* PromptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63435AEF78F0759E44130FFB /* PromptView.swift */; };
+		DF7EE2F5D654BED54A5D067D /* PreviewMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAD10EAC3A00E3AE20348EA /* PreviewMainView.swift */; };
+		E83D46633F50BEDCAA277D5B /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B799286724991352EBF97C4D /* SettingsView.swift */; };
+		E93CB98FEACFCC3DC7C8272E /* CherriCompiler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC274B1582647AF2722C74E2 /* CherriCompiler.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		121C13C09B19F2339D96BAC4 /* CherriLLMGuide.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = CherriLLMGuide.txt; sourceTree = "<group>"; };
+		2AE6E883D671F9CEEF3E73B0 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		2CC18CF4F84D0C635262A641 /* OllamaService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OllamaService.swift; sourceTree = "<group>"; };
+		3CE6459737AF8F729ED6C572 /* SchedulesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulesView.swift; sourceTree = "<group>"; };
+		4016F10F3FDEEF0CCE396DAA /* AgenticShortcuts.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AgenticShortcuts.entitlements; sourceTree = "<group>"; };
+		424BEB49732AFBA358DF3C7D /* PreviewLogsPane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewLogsPane.swift; sourceTree = "<group>"; };
+		4AAD10EAC3A00E3AE20348EA /* PreviewMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewMainView.swift; sourceTree = "<group>"; };
+		4E8343D9250591F73D0CAB00 /* CherriExamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CherriExamples.swift; sourceTree = "<group>"; };
+		517A1A29E066E2FE1F6B6F53 /* PreviewSidebar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewSidebar.swift; sourceTree = "<group>"; };
+		524089F7C2B3ED6A4C7BB1FC /* AppShortcuts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppShortcuts.swift; sourceTree = "<group>"; };
+		5E7FAE129827B260A587C7B3 /* ShortcutProject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutProject.swift; sourceTree = "<group>"; };
+		63435AEF78F0759E44130FFB /* PromptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptView.swift; sourceTree = "<group>"; };
+		6D5AD8ED279C860D76E74DA8 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		8189F2B907EC87BD08257A33 /* AgenticShortcutsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgenticShortcutsApp.swift; sourceTree = "<group>"; };
+		8383EB28F75A8BC57B1F4F4C /* ShortcutGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutGenerator.swift; sourceTree = "<group>"; };
+		8785600C271D746ECEC6A117 /* ActionCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionCatalog.swift; sourceTree = "<group>"; };
+		942B6BF520CDDB1485CBBD6B /* Agentic Shortcuts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Agentic Shortcuts.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		96C5B05808F569EDDCA9C9AB /* PreviewInspector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewInspector.swift; sourceTree = "<group>"; };
+		AF8B71353848123CD5E747E7 /* GenerationResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerationResult.swift; sourceTree = "<group>"; };
+		AFA6B93FEDB54A277518C58E /* CodePreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodePreviewView.swift; sourceTree = "<group>"; };
+		B799286724991352EBF97C4D /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		BC274B1582647AF2722C74E2 /* CherriCompiler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CherriCompiler.swift; sourceTree = "<group>"; };
+		C4D2C67DA69745867F3F28BE /* PreviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewModel.swift; sourceTree = "<group>"; };
+		CA57EACECC7FE95BB397CCAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CCD8B157FC495C92CCFB4CE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		CF9756D18FBD2A892DC82D6F /* PreviewComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewComponents.swift; sourceTree = "<group>"; };
+		DD07AB7404165783D04167C5 /* CreateShortcutIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateShortcutIntent.swift; sourceTree = "<group>"; };
+		E52B60586E093C8AD00DEA22 /* ScheduleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleService.swift; sourceTree = "<group>"; };
+		F0504BBFE5930F8B62FA563C /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0BAFEE72DAABC7F356B60DCD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CA57EACECC7FE95BB397CCAA /* Assets.xcassets */,
+				121C13C09B19F2339D96BAC4 /* CherriLLMGuide.txt */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0C72170C3DE2CA004140CCAB /* Intents */ = {
+			isa = PBXGroup;
+			children = (
+				524089F7C2B3ED6A4C7BB1FC /* AppShortcuts.swift */,
+				DD07AB7404165783D04167C5 /* CreateShortcutIntent.swift */,
+			);
+			path = Intents;
+			sourceTree = "<group>";
+		};
+		12AE0DB56938116DE21C3852 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AF8B71353848123CD5E747E7 /* GenerationResult.swift */,
+				F0504BBFE5930F8B62FA563C /* Schedule.swift */,
+				5E7FAE129827B260A587C7B3 /* ShortcutProject.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		43D47F1A80DABF9FDFACFCEC = {
+			isa = PBXGroup;
+			children = (
+				8FBFD3EA986576619268819C /* AgenticShortcuts */,
+				8190A1B1B975F6AE5E6AEBFE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7188F7AB74682664CB7C72BB /* PreviewUI */ = {
+			isa = PBXGroup;
+			children = (
+				CF9756D18FBD2A892DC82D6F /* PreviewComponents.swift */,
+				96C5B05808F569EDDCA9C9AB /* PreviewInspector.swift */,
+				424BEB49732AFBA358DF3C7D /* PreviewLogsPane.swift */,
+				4AAD10EAC3A00E3AE20348EA /* PreviewMainView.swift */,
+				517A1A29E066E2FE1F6B6F53 /* PreviewSidebar.swift */,
+				C4D2C67DA69745867F3F28BE /* PreviewViewModel.swift */,
+			);
+			path = PreviewUI;
+			sourceTree = "<group>";
+		};
+		7655768859BFDF9B9EC34713 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8785600C271D746ECEC6A117 /* ActionCatalog.swift */,
+				BC274B1582647AF2722C74E2 /* CherriCompiler.swift */,
+				4E8343D9250591F73D0CAB00 /* CherriExamples.swift */,
+				2CC18CF4F84D0C635262A641 /* OllamaService.swift */,
+				E52B60586E093C8AD00DEA22 /* ScheduleService.swift */,
+				8383EB28F75A8BC57B1F4F4C /* ShortcutGenerator.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8190A1B1B975F6AE5E6AEBFE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				942B6BF520CDDB1485CBBD6B /* Agentic Shortcuts.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8FBFD3EA986576619268819C /* AgenticShortcuts */ = {
+			isa = PBXGroup;
+			children = (
+				4016F10F3FDEEF0CCE396DAA /* AgenticShortcuts.entitlements */,
+				8189F2B907EC87BD08257A33 /* AgenticShortcutsApp.swift */,
+				CCD8B157FC495C92CCFB4CE6 /* Info.plist */,
+				0C72170C3DE2CA004140CCAB /* Intents */,
+				12AE0DB56938116DE21C3852 /* Models */,
+				7188F7AB74682664CB7C72BB /* PreviewUI */,
+				0BAFEE72DAABC7F356B60DCD /* Resources */,
+				7655768859BFDF9B9EC34713 /* Services */,
+				DAB772A8599D060603FA8B6F /* Views */,
+			);
+			path = AgenticShortcuts;
+			sourceTree = "<group>";
+		};
+		DAB772A8599D060603FA8B6F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AFA6B93FEDB54A277518C58E /* CodePreviewView.swift */,
+				2AE6E883D671F9CEEF3E73B0 /* HistoryView.swift */,
+				6D5AD8ED279C860D76E74DA8 /* MainView.swift */,
+				63435AEF78F0759E44130FFB /* PromptView.swift */,
+				3CE6459737AF8F729ED6C572 /* SchedulesView.swift */,
+				B799286724991352EBF97C4D /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AFBBDE492FEBA16836FD6991 /* AgenticShortcuts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 483951E8DB05E5C584517843 /* Build configuration list for PBXNativeTarget "AgenticShortcuts" */;
+			buildPhases = (
+				EB3E97FC97BF6685D4938E5C /* Sources */,
+				AC5FAE43DB5A98801C27DA44 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AgenticShortcuts;
+			packageProductDependencies = (
+			);
+			productName = AgenticShortcuts;
+			productReference = 942B6BF520CDDB1485CBBD6B /* Agentic Shortcuts.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F596C3DB6283178834EE3EA4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					AFBBDE492FEBA16836FD6991 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D2FA89C0B0CCD2C5071BCBFF /* Build configuration list for PBXProject "AgenticShortcuts" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 43D47F1A80DABF9FDFACFCEC;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 8190A1B1B975F6AE5E6AEBFE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AFBBDE492FEBA16836FD6991 /* AgenticShortcuts */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AC5FAE43DB5A98801C27DA44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A84540E9C80D1F4573796C99 /* Assets.xcassets in Resources */,
+				644DD1054A27FD134F3720C6 /* CherriLLMGuide.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB3E97FC97BF6685D4938E5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89728C19682BA613FFAD8C1E /* ActionCatalog.swift in Sources */,
+				56923AD0177F4B736D4FA19B /* AgenticShortcutsApp.swift in Sources */,
+				B004528CEF283ADEC86F39D1 /* AppShortcuts.swift in Sources */,
+				E93CB98FEACFCC3DC7C8272E /* CherriCompiler.swift in Sources */,
+				2140637A0769EC97B0F571DA /* CherriExamples.swift in Sources */,
+				4D4EB0407614652FD2C295A6 /* CodePreviewView.swift in Sources */,
+				6D6C4F481AEB42F0B96CE3AA /* CreateShortcutIntent.swift in Sources */,
+				7261E82354929DA647BD9C78 /* GenerationResult.swift in Sources */,
+				728A54374FEF7DD304DAC95B /* HistoryView.swift in Sources */,
+				535750D9DAE7AA34D1681F8E /* MainView.swift in Sources */,
+				83E1DC23CA240813ECF021FB /* OllamaService.swift in Sources */,
+				90AAAFB61F0F6C3AA2B94C65 /* PreviewComponents.swift in Sources */,
+				1B549A33E20EDD3D5B24F3C7 /* PreviewInspector.swift in Sources */,
+				9A683F1FCD4CA2E577C78901 /* PreviewLogsPane.swift in Sources */,
+				DF7EE2F5D654BED54A5D067D /* PreviewMainView.swift in Sources */,
+				4CC7080C172805F505E9A6B2 /* PreviewSidebar.swift in Sources */,
+				811258341715242BE9D3692F /* PreviewViewModel.swift in Sources */,
+				C8EACC865923CAB26AB13468 /* PromptView.swift in Sources */,
+				9E2C7DC60E40217EC3BBBF4C /* Schedule.swift in Sources */,
+				C368EA1467B043C5F0956C3F /* ScheduleService.swift in Sources */,
+				75426964360E8F2BDAAD0819 /* SchedulesView.swift in Sources */,
+				E83D46633F50BEDCAA277D5B /* SettingsView.swift in Sources */,
+				8BA452CE58C1960E559CE93B /* ShortcutGenerator.swift in Sources */,
+				C0CC3114D5690F4A29F30E5C /* ShortcutProject.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0D70C90E8EB9ED0E084E2D7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AgenticShortcuts/AgenticShortcuts.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 72N244KND5;
+				ENABLE_APP_SANDBOX = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = AgenticShortcuts/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.agenticshortcuts.app;
+				PRODUCT_NAME = "Agentic Shortcuts";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+		A688759C418786EEB8AEFDF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		C835BB262A823F0B75F2D35D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D848976555B73C6EDED75442 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AgenticShortcuts/AgenticShortcuts.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 72N244KND5;
+				ENABLE_APP_SANDBOX = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = AgenticShortcuts/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.agenticshortcuts.app;
+				PRODUCT_NAME = "Agentic Shortcuts";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		483951E8DB05E5C584517843 /* Build configuration list for PBXNativeTarget "AgenticShortcuts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D70C90E8EB9ED0E084E2D7D /* Debug */,
+				D848976555B73C6EDED75442 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D2FA89C0B0CCD2C5071BCBFF /* Build configuration list for PBXProject "AgenticShortcuts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C835BB262A823F0B75F2D35D /* Debug */,
+				A688759C418786EEB8AEFDF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F596C3DB6283178834EE3EA4 /* Project object */;
+}
